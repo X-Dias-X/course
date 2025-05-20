@@ -384,7 +384,7 @@
                     </div>
                     <div class="section06__main-info">
                         <div class="section06__mini-wrraper">
-                            <h1 class="section06__inphone-h1">Your score:159</h1>
+                            <h1 class="section06__inphone-h1">Your score: <span id="sliderValue">50</span></h1>
                         <a href="" class="section06__iphone-a">What do that numbers mean?</a>
                         </div>
                         <div class="users__rank">
@@ -406,7 +406,13 @@
                                     <p class="user__rank-num">0-49</p>
                                 </div>
                             </div>
-                            <input class="user__submited-rank" type="range">
+                        
+                            <div class="slider-container">
+                                <input type="range" min="0" max="200" value="50" class="range-slider user__submited-rank" id="myRange">
+                                <div class="output">
+                                  <p>Your score: <span id="sliderValue2">50</span></p>
+                                </div>
+                              </div>
                         </div>
 
                         <div class="persent__better">
@@ -702,5 +708,16 @@
     </div>
     </div>
     <!--footer-end-->
+    <script>
+        const slider = document.getElementById('myRange');
+        const output = document.getElementById('sliderValue');
+        const output2 = document.getElementById('sliderValue2');
+        slider.oninput = function() {
+          output.textContent = slider.value; // Har safar slider harakat qilganda qiymatni yangilaydi
+        }
+        slider.oninput = function() {
+          output2.textContent = slider.value; // Har safar slider harakat qilganda qiymatni yangilaydi
+        }
+      </script>
 </body>
 </html>
