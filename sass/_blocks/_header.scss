@@ -1,0 +1,65 @@
+.dias-section{
+
+}
+.dias__wrraper{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: row;
+gap: 10px;
+}
+.header__logo{
+
+}
+.header__menu{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: row;
+gap: 5px;
+}
+.header__item{
+
+}
+.header__link{
+
+}
+.header__form{
+
+}
+.header__span{
+
+}
+.header__input{
+border: 1px solid black;
+border-radius: 10px;
+padding: 10px;
+}
+.users__account{
+align-items: center;
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+gap: 5px;
+}
+.login__btn{
+background-color: transparent;
+color: #6D28D2;
+border: 1px solid #6D28D2;
+padding: 10px;
+border-radius: 5px;
+}
+.signup__btn{
+background-color: #6D28D2;
+color: white;
+border: 1px solid #6D28D2;
+padding: 10px;
+border-radius: 5px;
+}
+.clear__btn{
+background-color: transparent;
+color: #6D28D2;
+border: 1px solid #6D28D2;
+padding: 10px;
+border-radius: 5px;
+}
