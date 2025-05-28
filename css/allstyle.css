@@ -58,6 +58,13 @@ position: relative;
   .section02__wrraper{
 
   }
+  .login__btn{
+    padding: 10px;
+    border-radius: 10px;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    background-color: transparent;
+  }
   .section02__text{
 color: white;
 text-align: center;
