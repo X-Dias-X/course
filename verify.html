@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Verify Email</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container{
+      padding: 0 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    }
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  input{
+    padding: 10px;
+    border: 1px solid purple;
+    border-radius: 10px;
+    width: 300px;
+    
+  }
+  button{
+    padding: 10px;
+    border: 1px solid purple;
+    border-radius: 10px;
+    width: 300px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2{
+    text-align: center;
+  }
+  .remove{
+    
+  }
+  @media screen and (max-width:300px){
+    .container{
+      padding: 0 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    }
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  input{
+    padding: 10px;
+    border: 1px solid purple;
+    border-radius: 10px;
+    width: 250px;
+    
+  }
+  button{
+    padding: 10px;
+    border: 1px solid purple;
+    border-radius: 10px;
+    width: 250px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2{
+    text-align: center;
+  }
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Email Verification</h2>
+    <form id="verify-form">
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <input type="text" id="code" placeholder="Enter verification code" required>
+      <button type="submit">Submite</button>
+    </form>
+    <p id="status"></p>
+    <button class="remove"><a href="./index.html" class="remove__link">remove</a></button>
+  </div>
+
+  <script src="./all.js/verify.js"></script>
+</body>
+</html>
